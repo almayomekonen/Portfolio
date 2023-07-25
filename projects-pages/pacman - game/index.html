@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pacman</title>
+  <link rel="shortcut icon" href="/projects-pages/pacman - game/pacman-icon-26.jpg">
+  <script defer src="/projects-pages/pacman - game/scripts/badGuyChasing.js"></script>
+  <script defer src="/projects-pages/pacman - game/scripts/Directions.js"></script>
+  <script defer src="/projects-pages/pacman - game/scripts/script.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="overflow: hidden" onkeydown="handleKeyDown(event.key)">
+  <!-- pacman -->
+  <img id="pacman" style="position: absolute; top: 0; left: 0px" src="images/pacman.jpg" alt="" />
+
+  <!-- badGuy -->
+  <img id="badguy" style="position: absolute; right: 0px; top: 0px" src="images/badguy.png" alt="" />
+
+  <div class="message" style="display: none">Bad guy caught Pacman!</div>
+
+  <div class="ArrowUp">⬆</div>
+  <div class="ArrowDirections">⬅ ⬇ ➡</div>
+
+  <!-- <div class="ArrowUpUser">⬆</div>
+    <div class="ArrowDirectionsUser">⬅ ⬇ ➡</div> -->
+
+  <h1>
+    To start the game, press on the
+    <br />
+    button shown in front of you
+  </h1>
+  <div class="centerButton"><button id="startgame">Start Game</button></div>
+
+  <div style="display: none" class="divCenter-New-game-Button">
+    <h1 style="color: white">press here 👇🏽 To start New game 🤗</h1>
+    <button class="New-game">New game</button>
+  </div>
+</body>
+
+</html>

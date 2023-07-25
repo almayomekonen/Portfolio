@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700;900&display=swap");
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: skyblue;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  font-family: "Rubik", sans-serif !important;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 16px;
+}
+
+.frame {
+  width: 80%;
+  max-width: 900px;
+  min-height: 300px;
+  background-color: #ffffffc9;
+  margin: auto;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.gallery {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  background: #0000009e;
+  color: white;
+  padding: 0 10px;
+  font-size: 18px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.arrow:hover {
+  background: black;
+}
+
+.gallery:hover .arrow {
+  opacity: 1;
+}
+
+.arrow.right {
+  border-radius: 8px 0 0 8px;
+  right: 0;
+}
+
+.arrow.left {
+  border-radius: 0 8px 8px 0;
+}
+
+.arrow.right::after {
+  content: ">>";
+}
+
+.arrow.left::after {
+  content: "<<";
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.project-card-2 {
+  --padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: 100px;
+  overflow: hidden;
+  width: 55vw;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  animation: collisionEffect 1.3s forwards;
+}
+
+@keyframes collisionEffect {
+  0% {
+    transform: translateY(-100vh);
+  }
+  70% {
+    transform: translateY(30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.project-card-2:hover {
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .project-card-2 {
+    width: 80vw;
+    animation-duration: 1s;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.project-card-1,
+.project-card-2 {
+  padding: var(--padding);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .project-card-2 {
+    width: 90vw; /* Adjust the width for small screens */
+  }
+}
+
+.card-text {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.btn-text {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+  font-size: 20px;
+  font-weight: bold;
+}
+span:hover {
+  color: #000;
+  transition: 1s;
+  font-size: 21px;
+}
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+.w-100 {
+  width: 40%;
+  margin: 0 auto;
+}
+.centerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+body {
+  margin: 0px;
+  background-color: #dbdbdb;
+}

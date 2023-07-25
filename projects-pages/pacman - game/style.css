@@ -1,0 +1,200 @@
+#pacman,
+#badguy {
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ArrowUp {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+  font-size: 35px;
+}
+
+.ArrowDirections {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.centerButton {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 50px;
+  width: 110px;
+}
+
+button:hover {
+  background-color: white;
+  color: crimson;
+  font-weight: bold;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.divCenter-New-game-Button {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  background-color: crimson;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .divCenter-New-game-Button {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .divCenter-New-game-Button {
+    display: none;
+  }
+}
+
+.divCenter-New-game-Button .no-blur {
+  filter: none;
+}
+
+.New-game {
+  display: block;
+  margin: 10px auto;
+}
+
+#bluebadguy {
+  width: 100px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.project-card-2 {
+  background-color: rgba(0, 139, 139, 0.53);
+  --padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: 100px;
+  overflow: hidden;
+  width: 45vw;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  animation: collisionEffect 1.3s forwards;
+}
+
+@keyframes collisionEffect {
+  0% {
+    transform: translateY(-100vh);
+  }
+  70% {
+    transform: translateY(30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.project-card-2:hover {
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .project-card-2 {
+    width: 80vw;
+    animation-duration: 1s;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+.project-card-1,
+.project-card-2 {
+  padding: var(--padding);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .project-card-2 {
+    width: 90vw;
+  }
+}
+
+.card-text {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.btn-text {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+  font-size: 20px;
+  font-weight: bold;
+}
+span:hover {
+  color: white;
+  transition: 1s;
+  font-size: 29px;
+}
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+.w-100 {
+  width: 40%;
+  margin: 0 auto;
+}
+.centerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

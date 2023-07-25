@@ -1,0 +1,174 @@
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: rgba(0, 128, 128, 0.627);
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cell {
+  width: 115px;
+  height: 115px;
+  border: 5px solid yellow;
+  line-height: 75px;
+  font-size: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+#gameContainer {
+  text-align: center;
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  width: 225px;
+  margin: auto;
+}
+
+button {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  background-color: black;
+  border: 2px solid white;
+  color: yellow;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: yellow;
+  color: crimson;
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(0.9);
+  border: 3px solid black;
+}
+h1 {
+  font-size: 40px;
+  color: yellow;
+}
+.current-player {
+  font-weight: bold;
+  color: yellow;
+  font-size: 35px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.project-card-2 {
+  --padding: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  border-radius: 100px;
+  overflow: hidden;
+  width: 45vw;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  animation: collisionEffect 1.3s forwards;
+}
+
+@keyframes collisionEffect {
+  0% {
+    transform: translateY(-100vh);
+  }
+  70% {
+    transform: translateY(30vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.project-card-2:hover {
+  box-shadow: 0 8px 16px rgb(0, 0, 0);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .project-card-2 {
+    width: 80vw;
+    animation-duration: 1s;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.project-card-1,
+.project-card-2,
+:is(.project-card-4) .card-content {
+  padding: var(--padding);
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .project-card-2 {
+    width: 90vw; /* Adjust the width for small screens */
+  }
+}
+
+.card-text {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.btn-text {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+  font-size: 20px;
+  font-weight: bold;
+}
+span:hover {
+  color: #000;
+  transition: 1s;
+  font-size: 21px;
+}
+a,
+img,
+span,
+button,
+ion-icon {
+  display: block;
+}
+
+.w-100 {
+  width: 40%;
+  margin: 0 auto;
+}
+.centerButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.centerButton {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>סנייק</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/projects-pages/snake - Game/snake favicon.jpeg">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body onload="createBoard()" dir="rtl">
+  <h1>סנייק</h1>
+  <div class="inputCenter">
+    <input type="range" id="rangeInput" style="width: 400px" min="0" max="100" value="50" />
+  </div>
+  <p id="valueOutput">50</p>
+
+  <div class="frame">
+    <div class="board"></div>
+  </div>
+
+  <audio src=""></audio>
+  <script src="/projects-pages/snake - Game/JS/Directions.js"></script>
+  <script src="/projects-pages/snake - Game/JS/gameOver.js"></script>
+  <script src="/projects-pages/snake - Game/JS/helper.js"></script>
+  <script src="/projects-pages/snake - Game/JS/main.js"></script>
+  <script src="/projects-pages/snake - Game/JS/range.js"></script>
+  <script src="/projects-pages/snake - Game/JS/SnakeColor.js"></script>
+</body>
+
+</html>

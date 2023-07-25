@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Memory Game</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/Images/memory-favicon.jpg" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script defer src="/projects-pages/Memory - game/Js/check.js"></script>
+  <script defer src="/projects-pages/Memory - game/Js/confetti.js"></script>
+  <script defer src="/projects-pages/Memory - game/Js/script.js"></script>
+  <script defer src="/projects-pages/Memory - game/Js/startGamePopup.js"></script>
+  <script defer src="/projects-pages/Memory - game/Js/Timer.js"></script>
+</head>
+
+<body>
+  <h1>Memory Game</h1>
+
+  <div class="centerTimerattemps">
+    <p>attempts: <b class="counter">0</b></p>
+    <p>
+      <span class="margin"></span> Timer:
+      <b class="timer">00:00</b>
+    </p>
+  </div>
+
+
+  <div class="popup" id="startPopup">
+    <p class="matchingpairs">matching pairs
+    </p>
+    <h1>Welcome to the Game!</h1>
+    <button><img src="/Images/startButton.png" alt=""></button>
+    <p class="match">Tap a pair of squares each time to find out if they match
+    </p>
+    <h1> Have some Fun 🤗!</h1>
+  </div>
+
+  <!-- overlay -->
+  <div class="overLay"></div>
+
+  <audio id="gameSound">
+    <source src="startGame.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="player-turn-container">
+    <span id="player-turn"></span>
+  </div>
+
+  <br />
+
+  <div class="frame">
+    <div class="boardBGC">
+      <div class="board"></div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
