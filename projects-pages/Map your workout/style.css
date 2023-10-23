@@ -348,7 +348,6 @@ button {
   background-color: var(--color-light--1);
 }
 
-/* Popup width is defined in JS using options */
 .leaflet-popup .leaflet-popup-content-wrapper {
   background-color: var(--color-dark--1);
   color: var(--color-light--2);
@@ -498,4 +497,40 @@ ion-icon {
   width: 400px;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+/* Add these media queries at the end of your existing CSS */
+
+/* For small screens (less than 768px) */
+@media (max-width: 767px) {
+  .project-card-2 {
+    width: 90vw;
+  }
+
+  .mapImage {
+    width: 100%;
+  }
+
+  /* Add other specific styles for smaller screens here */
+}
+
+/* For extra small screens (less than 500px) */
+@media (max-width: 499px) {
+  body {
+    padding: 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  .project-card-2 {
+    width: 95vw;
+  }
+
+  .form {
+    padding: 1rem; /* Adjust the padding for smaller screens */
+  }
+
+  .description {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  /* Add other specific styles for extra small screens here */
 }

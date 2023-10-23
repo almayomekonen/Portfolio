@@ -5,6 +5,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   background-color: skyblue;
+  padding: 10px;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -141,10 +142,9 @@ img {
   padding: var(--padding);
 }
 
-/* Media query for small screens */
 @media (max-width: 600px) {
   .project-card-2 {
-    width: 90vw; /* Adjust the width for small screens */
+    width: 90vw;
   }
 }
 
@@ -194,4 +194,18 @@ ion-icon {
 body {
   margin: 0px;
   background-color: #dbdbdb;
+}
+
+.custom-button {
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.custom-button:hover {
+  white-space: nowrap;
+  background-color: your-hover-background-color;
+  color: your-hover-text-color;
 }

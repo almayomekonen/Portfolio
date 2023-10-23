@@ -36,11 +36,6 @@ h1 {
   text-align: center;
 }
 
-.centerButton {
-  display: flex;
-  justify-content: center;
-}
-
 button {
   background-color: black;
   color: white;
@@ -149,7 +144,6 @@ button:hover {
   padding: var(--padding);
 }
 
-/* Media query for small screens */
 @media (max-width: 600px) {
   .project-card-2 {
     width: 90vw;
@@ -194,7 +188,8 @@ ion-icon {
   margin: 0 auto;
 }
 .centerButtons {
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
 }

@@ -8,18 +8,6 @@
 html {
   min-height: 100%;
 }
-.board div {
-  width: 100px;
-  height: 100px;
-  background-color: #f2f2f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  color: transparent;
-}
 
 body {
   animation: fadeInAnimation ease 3s;
@@ -27,6 +15,7 @@ body {
   animation-fill-mode: forwards;
   background-color: rgba(139, 0, 0, 0.635);
 }
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -44,21 +33,11 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
   color: white;
   margin: 16px;
-}
-
-.frame {
-  text-align: center;
-}
-
-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 12px 0;
-  margin: 0px;
 }
 
 .board {
@@ -101,10 +80,6 @@ h2 {
   visibility: hidden;
 }
 
-.board div.showing span {
-  display: initial;
-}
-
 .active {
   background-color: #5919c7 !important;
 }
@@ -131,11 +106,13 @@ h2 {
   justify-content: center;
   animation: zoom-in 2s;
 }
+
 .centerTimerattemps {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 p {
   font-size: 20px;
   text-align: center;
@@ -145,29 +122,32 @@ p {
 p .margin {
   margin: 0 12px;
 }
-.cheat {
-  filter: brightness(0.7);
-}
+
 img {
   width: 100px;
 }
+
 .boardBGC {
   background-color: rgba(139, 0, 0, 0);
 }
+
 #player-list-container {
   display: flex;
   justify-content: center;
   color: white;
 }
+
 #player-list {
   margin: 0 12px;
   text-align: center;
   color: white;
 }
+
 .current-player {
   color: white;
   text-align: center;
 }
+
 button {
   display: block;
   margin: 20px auto;
@@ -186,6 +166,7 @@ button {
   height: 100vh;
   display: block;
 }
+
 #popup {
   font-family: arial;
   text-align: center;
@@ -209,14 +190,16 @@ button {
   right: 8px;
   cursor: pointer;
 }
+
 .center-Container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 .project-card-2 {
-  --padding: 44px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: var(--padding);
@@ -258,15 +241,10 @@ button {
   }
 }
 
-.project-card-1,
-.project-card-2,
-:is(.project-card-4) .card-content {
-  padding: var(--padding);
-}
-
 @media (max-width: 600px) {
   .project-card-2 {
     width: 90vw;
+    padding: 30px;
   }
 }
 
@@ -276,10 +254,12 @@ button {
   font-weight: bold;
   font-size: 20px;
 }
+
 h3 {
   text-align: center;
   font-size: 40px;
 }
+
 .btn-text {
   gap: 10px;
   display: flex;
@@ -289,11 +269,13 @@ h3 {
   transition: var(--transition-1);
   font-size: 20px;
 }
+
 span:hover {
   color: #000;
   transition: 1s;
   font-size: 21px;
 }
+
 a,
 img,
 span,
@@ -306,7 +288,9 @@ ion-icon {
   width: 50%;
   margin: 0 auto;
 }
+
 .centerButtons {
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   gap: 25px;
@@ -343,6 +327,7 @@ ion-icon {
 .matchingpairs {
   font-size: 30px;
 }
+
 .match {
   font-size: 30px;
 }
