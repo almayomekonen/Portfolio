@@ -41,11 +41,18 @@ h1 {
 }
 
 .board {
-  display: inline-grid;
-  border-radius: 3px;
-  border: 4px solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
   overflow: hidden;
   background-color: wheat;
+  border: 4px solid;
+  border-radius: 20px;
+}
+
+.board div {
+  width: calc(20% - 2px);
+  padding-bottom: calc(20% - 2px);
 }
 
 @media (max-width: 600px) {

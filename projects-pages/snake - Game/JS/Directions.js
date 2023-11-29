@@ -72,3 +72,51 @@ function move(dir) {
   color();
   startAuto();
 }
+
+document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchmove", handleTouchMove, false);
+
+let xDown = null;
+let yDown = null;
+
+function handleTouchStart(event) {
+  const firstTouch = event.touches[0];
+  xDown = firstTouch.clientX;
+  yDown = firstTouch.clientY;
+}
+
+function handleTouchMove(event) {
+  if (!xDown || !yDown) {
+    return;
+  }
+
+  const xUp = event.touches[0].clientX;
+  const yUp = event.touches[0].clientY;
+
+  const xDiff = xDown - xUp;
+  const yDiff = yDown - yUp;
+
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    // Horizontal swipe
+    if (xDiff > 0) {
+      // Left swipe
+      move("left");
+    } else {
+      // Right swipe
+      move("right");
+    }
+  } else {
+    // Vertical swipe
+    if (yDiff > 0) {
+      // Up swipe
+      move("up");
+    } else {
+      // Down swipe
+      move("down");
+    }
+  }
+
+  // Reset values
+  xDown = null;
+  yDown = null;
+}
