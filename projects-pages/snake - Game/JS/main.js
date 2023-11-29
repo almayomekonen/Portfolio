@@ -153,12 +153,7 @@ function gameOver() {
   isGameOver = true;
   clearInterval(interval);
 
-  const audio = new Audio("Country_Blues.ogg");
-  audio.volume = 0.6;
-
-  audio.preload = "auto";
-
-  audio.load();
+  const audio = document.getElementById("gameOverAudio");
 
   audio.addEventListener("ended", function () {
     alert("Game over");
