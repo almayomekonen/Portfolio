@@ -9,6 +9,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   background-color: #3838384c;
+  overflow: hidden;
 }
 @keyframes fadeInAnimation {
   0% {
