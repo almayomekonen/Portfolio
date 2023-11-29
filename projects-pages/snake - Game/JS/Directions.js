@@ -97,26 +97,19 @@ function handleTouchMove(event) {
   const yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
-    // Horizontal swipe
     if (xDiff > 0) {
-      // Left swipe
       move("left");
     } else {
-      // Right swipe
       move("right");
     }
   } else {
-    // Vertical swipe
     if (yDiff > 0) {
-      // Up swipe
       move("up");
     } else {
-      // Down swipe
       move("down");
     }
   }
 
-  // Reset values
   xDown = null;
   yDown = null;
 }
