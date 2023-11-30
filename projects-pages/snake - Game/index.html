@@ -12,11 +12,15 @@
 </head>
 
 <body onload="createBoard()" dir="rtl">
-  <h1>סנייק</h1>
-  <div class="inputCenter">
-    <input type="range" id="rangeInput" style="width: 400px" min="0" max="100" value="50" />
+  <h1>Snake Game</h1>
+
+  <div class="centerTimerattemps">
+    <p>attempts: <b class="counter">0</b></p>
+    <p>
+      <span style="color: black;" class="margin"></span> Timer:
+      <b class="timer">00:00</b>
+    </p>
   </div>
-  <p id="valueOutput">50</p>
 
   <div class="frame">
     <div class="board"></div>
@@ -29,10 +33,9 @@
   </audio>
 
   <script src="/projects-pages/snake - Game/JS/Directions.js"></script>
-  <script src="/projects-pages/snake - Game/JS/helper.js"></script>
   <script src="/projects-pages/snake - Game/JS/main.js"></script>
-  <script src="/projects-pages/snake - Game/JS/range.js"></script>
   <script src="/projects-pages/snake - Game/JS/SnakeColor.js"></script>
+  <script src="/projects-pages/snake - Game/JS/Timer.js"></script>
 </body>
 
 </html>
