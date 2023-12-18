@@ -609,7 +609,18 @@ p {
   display: flex;
   justify-content: center;
 }
-
+.shop-list {
+  max-height: 150px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.shop-list.expanded {
+  max-height: 1000px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/

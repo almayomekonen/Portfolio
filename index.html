@@ -154,16 +154,20 @@
               <div class="card-content" data-reveal="right">
                 <h3 class="h3 card-title">Node.Js-Market</h3>
 
-                <p class="card-text">
-                  i've Built a shop using Node.js and Express, integrating MongoDB and MySQL. Implemented features
-                  include Stripe payments, form validation, and file uploads. Prioritized security with CSRF protection,
-                  nodemailer for emails, and secure password storage.
-                </p>
+                <div class="text-container shop-list" id="project-description">
+                  <p class="card-text">
+                    i've Built a shop using Node.js and Express, integrating MongoDB and MySQL. Implemented features
+                    include Stripe payments, form validation, and file uploads. Prioritized security with CSRF
+                    protection,
+                    nodemailer for emails, and secure password storage.
+                  </p>
+                </div>
+
+                <a href="#card-text" class="read-more" onclick="toggleReadMore()">Read More</a>
 
                 <a href="https://node-market-shop-2ccb36d37d9f.herokuapp.com/" target="_blank" class="btn-text"
                   style="color: #3f78e0">
                   <span class="span">See Project</span>
-
                   <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                 </a>
               </div>
@@ -172,6 +176,13 @@
                 <img src="/Images/shop.jpeg" width="400" height="367" loading="lazy" alt="Web Design" class="w-100" />
               </figure>
             </div>
+
+            <script>
+              function toggleReadMore() {
+                var description = document.getElementById("project-description");
+                description.classList.toggle("expanded");
+              }
+            </script>
           </li>
           <br>
           <ul class="grid-list">
