@@ -255,6 +255,11 @@ p {
   display: grid;
   gap: 30px;
 }
+.icons {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
 
 [data-reveal] {
   opacity: 0;
