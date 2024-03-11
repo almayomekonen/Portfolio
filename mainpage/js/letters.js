@@ -24,7 +24,7 @@ function showLetters(element, text) {
     index++;
 
     if (index < letters.length) {
-      setTimeout(nextLetter, 50); // Change the timeout to 50 milliseconds (0.05 seconds)
+      setTimeout(nextLetter, 35); // Change the timeout to 50 milliseconds (0.05 seconds)
     } else {
       // After appending all the letters, update the text content with an empty string
     }
