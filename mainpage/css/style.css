@@ -1122,7 +1122,7 @@ textarea.input-field {
   left: 70px;
   position: absolute;
   background: rgba(30, 30, 30, 0.1)
-    url(https://www.freeiconspng.com/thumbs/telephone-icon/tel-phone-icon-5.png)
+    url('../../Images/phone.png')
     no-repeat center center;
     background-size: 60%;
   -webkit-border-radius: 100%;
