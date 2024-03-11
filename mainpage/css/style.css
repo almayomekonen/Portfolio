@@ -429,8 +429,7 @@ p {
 }
 
 .hero-banner .w-100 {
-  background-image: linear-gradient(grey, black);
-  mask-image: url("/Images/almayo-nala.jpeg");
+  mask-image: url("/Images/almayo.png");
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: center;

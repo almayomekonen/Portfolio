@@ -24,7 +24,7 @@ function showLetters(element, text) {
     index++;
 
     if (index < letters.length) {
-      setTimeout(nextLetter, 100);
+      setTimeout(nextLetter, 50); // Change the timeout to 50 milliseconds (0.05 seconds)
     } else {
       // After appending all the letters, update the text content with an empty string
     }
@@ -43,5 +43,5 @@ function getRandomColor() {
   return color;
 }
 
-// Call the showLetters function for the title with a delay
-setTimeout(() => showLetters(title, text), 1000); // 0.5 seconds delay (500 milliseconds)
+// Call the showLetters function for the title with a shorter delay
+showLetters(title, text); // No initial delay
