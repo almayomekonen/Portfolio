@@ -17,7 +17,7 @@ From HTML and CSS for structure and style to the dynamic power of JavaScript , t
 Much like a well-crafted codebase, this portfolio is designed with attention to detail and user experience. 🌐🎨 Whether you're a fellow developer seeking inspiration or a potential collaborator, I invite you to explore, learn, and connect.
 
 🌱 **Join the Journey**
-Just like a project, growth is continuous. I'm excited to continue evolving and adding more to this showcase. Your feedback and insights are invaluable in this journey. Let's connect on [LinkedIn](https://www.linkedin.com/in/almayo-mekonen-47b883260/) and collaborate on shaping the future.
+Just like a project, growth is continuous. I'm excited to continue evolving and adding more to this showcase. Your feedback and insights are invaluable in this journey. Let's connect on [LinkedIn](https://www.linkedin.com/in/almayo-mekonen-0835942b4/) and collaborate on shaping the future.
 
 Thank you for visiting! Your support means the world. 🙏🌍 Let's build amazing things together!
 
