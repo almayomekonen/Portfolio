@@ -199,6 +199,7 @@ body.nav-active {
 }
 p {
   text-align: center;
+  display: block;
 }
 
 .h3 {
@@ -592,8 +593,19 @@ p {
 .project-card .card-text {
   margin-block-end: 20px;
 }
+
+.card-text.memory-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-text.memory-card span {
+  flex: 1 1 100%; 
+  white-space: normal;
+}
+
 /* .p {
-  background-color: black;
+  background-color: black; 
 } */
 
 .project-card .btn-text {
