@@ -1,4 +1,4 @@
-**Portfolio Showcase: almayo mekonen#
+\*\*Portfolio Showcase: almayo mekonen#
 
 🎉 **Welcome to My Portfolio Showcase!** 🚀
 
@@ -8,6 +8,7 @@ Discover the culmination of my journey as a developer and creative problem solve
 From HTML and CSS for structure and style to the dynamic power of JavaScript , this portfolio demonstrates my proficiency in creating modern web applications that captivate and engage.
 
 🌟 **What You'll Find**
+
 - **Projects:** Browse through a collection of projects that showcase my skills in action.
 - **About Me:** Learn more about the person behind the code and my journey in the tech world.
 - **Contact:** Interested in collaboration or have questions? Feel free to get in touch.
