@@ -12,11 +12,13 @@ const ChatQuestions = ({ question, answer, handleQuestionClick }) => {
           {question}
         </button>
       </li>
-      {answer && (
-        <li className="answers-list">
-          <div className="answer">{answer}</div>
-        </li>
-      )}
+      <div>
+        {answer && (
+          <li className="answers-list">
+            <div className="answer">{answer}</div>
+          </li>
+        )}
+      </div>
     </>
   );
 };

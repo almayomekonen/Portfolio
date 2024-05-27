@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { IoChatbox } from "react-icons/io5";
 import ChatList from "./ChatList";
 import { w3cwebsocket as Socket } from "websocket";
+import "./Chat.css";
 
 const ChatContainer = () => {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
+  const [clickedQuestions, setClickedQuestions] = useState(0);
   const clientRef = useRef(null);
 
   useEffect(() => {
@@ -55,6 +57,7 @@ const ChatContainer = () => {
   const handleQuestionClick = (question) => {
     if (!answers[question]) {
       sendQuestion(question);
+      setClickedQuestions((prev) => prev + 1);
     }
   };
 
@@ -65,18 +68,27 @@ const ChatContainer = () => {
   };
 
   return (
-    <div className="chat-container">
-      <div className="chat">
-        Chat <IoChatbox className="message-button" />
+    <>
+      <div className="chat-container">
+        <div className="chat">
+          Chat <IoChatbox className="message-button" />
+        </div>
+        <hr />
+        <h4>Welcome to my digital service 💙</h4>
+        <span className="today">Today</span>
+        <ChatList
+          questions={questions}
+          answers={answers}
+          handleQuestionClick={handleQuestionClick}
+        />
+        {clickedQuestions === questions.length && (
+          <div className="message-end-chat">
+            Thank you for completing all the questions! I would love to see you
+            in lessons.
+          </div>
+        )}
       </div>
-      <hr />
-      <h4>Welcome to my digital service 💙</h4>
-      <ChatList
-        questions={questions}
-        answers={answers}
-        handleQuestionClick={handleQuestionClick}
-      />
-    </div>
+    </>
   );
 };
 
