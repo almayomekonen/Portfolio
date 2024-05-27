@@ -1,5 +1,6 @@
 // Importing the server class from the websocket library.
 const webSocketServer = require("websocket").server;
+
 // Importing the http library because WebSocket connections initially start as HTTP requests.
 const http = require("http");
 
@@ -28,7 +29,7 @@ const defaultQuestions = [
 // Define automatic answers corresponding to each default question
 const automaticAnswers = {
   "What programming languages and technologies are you interested in learning?":
-    "I teach a wide range of technologies, including HTML, CSS, React, Node.js, and MongoDB.",
+    "I teach a wide range of technologies, including HTML, CSS, React, Node.js, and MongoDB ets.",
   "What is your current level of experience with web development?":
     "Embark on your web development journey with confidence. My tailored teaching approach is designed to meet your unique needs and goals.",
   "Do you have any specific goals or projects you'd like to work on?":
