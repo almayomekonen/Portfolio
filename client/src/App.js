@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import Navbar from "./components/NavBar/navbar";
 import Header from "./components/Header/Header";
 import Skills from "./components/Skills/skills";
@@ -8,9 +8,10 @@ import Footer from "./components/Footer/footer";
 import Feedback from "./components/FeedBack/Feedback";
 import Popup from "./components/Popup/Popup";
 import { AnimatePresence } from "framer-motion";
+import ChatIcon from "./components/Chat/ChatIcon";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = React.useState(true);
 
   const handleClosePopup = () => {
     setShowPopup(false);
@@ -32,6 +33,7 @@ function App() {
       <Works />
       <Feedback />
       <Contact />
+      <ChatIcon />
       <Footer />
     </div>
   );
