@@ -31,18 +31,21 @@ p{
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
+    gap: 1rem;
     max-width: 50rem;
     margin-top: 3rem;
-}
-li{
-  list-style: none;
 }
 
 .works-img{
   width: 15rem;
   height: 15rem;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 2px solid transparent;
+  object-fit: cover;
+}
+
+li{
+  list-style: none;
 }
 
 .workBtn {

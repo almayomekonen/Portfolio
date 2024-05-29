@@ -11,7 +11,7 @@ const ChatContainer = () => {
   const clientRef = useRef(null);
 
   useEffect(() => {
-    const newClient = new Socket("ws://127.0.0.1:8000");
+    const newClient = new Socket("ws://88.99.24.18:8000");
     clientRef.current = newClient;
 
     newClient.onclose = () => {
