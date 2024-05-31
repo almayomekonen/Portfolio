@@ -14,9 +14,28 @@ const server = http.createServer();
 server.listen(webSocketServerPort);
 console.log("Server listening on port:", webSocketServerPort);
 
+// Function to check if the request origin is allowed
+function originIsAllowed(origin) {
+  return true; // Allow all origins for demonstration purposes
+}
+
 // Create a WebSocket server instance and attach it to the HTTP server
 const wsServer = new webSocketServer({
   httpServer: server,
+  // Add CORS headers to the WebSocket handshake response
+  autoAcceptConnections: false, // Disable auto-accept to allow adding headers
+  // Check origin and add appropriate CORS headers
+  verifyClient: function (info, cb) {
+    // Check if the request origin is allowed
+    const origin = info.origin;
+    if (originIsAllowed(origin)) {
+      // Allow connection
+      cb(true);
+    } else {
+      // Reject connection
+      cb(false);
+    }
+  },
 });
 
 // Define default questions for a fullstack developer tutor
