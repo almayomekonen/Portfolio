@@ -2,15 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { IoChatbox } from "react-icons/io5";
 import ChatList from "./ChatList";
 import { w3cwebsocket as Socket } from "websocket";
+import BeatLoader from "react-spinners/BeatLoader";
 import "./Chat.css";
 
 const ChatContainer = () => {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [clickedQuestions, setClickedQuestions] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
   const clientRef = useRef(null);
 
   useEffect(() => {
+    setIsLoading(true);
     const newClient = new Socket("ws://127.0.0.1:8000");
     clientRef.current = newClient;
 
@@ -23,6 +26,7 @@ const ChatContainer = () => {
     };
 
     newClient.onmessage = (message) => {
+      setIsLoading(false);
       try {
         const newMessage = JSON.parse(message.data);
         if (newMessage.type === "question") {
@@ -81,11 +85,18 @@ const ChatContainer = () => {
           answers={answers}
           handleQuestionClick={handleQuestionClick}
         />
+
         {clickedQuestions === questions.length && (
-          <div className="message-end-chat">
-            Thank you for completing all the questions! I would love to see you
-            in lessons.
-          </div>
+          <>
+            {isLoading ? (
+              <BeatLoader color="#DEB887" style={{ textAlign: "center" }} />
+            ) : (
+              <div className="message-end-chat">
+                Thank you for completing all the questions! I would love to see
+                you in lessons.
+              </div>
+            )}
+          </>
         )}
       </div>
     </>
