@@ -26,47 +26,75 @@
 }
 
 .skillBars {
-    margin: 1.5rem;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
     max-width: 80%;
     text-align: left;
+    margin: 1.5rem auto;
 }
 
 .skillBar {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem 2rem;
     border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: rgb(50, 50, 50);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillBar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skillBarImg {
     object-fit: cover;
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
-.skillBarText>p {
+.skillBarText {
+    text-align: center;
+}
+
+.skillBarText > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.skillBarText > p {
     font-size: 0.9rem;
     font-weight: 200;
 }
 
-@media screen and (max-width:720px) {
-    .skillBarText>p {
-        font-size: 2vw;
+@media screen and (max-width: 720px) {
+    .skillBars {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     }
 }
 
-@media screen and (max-width:480px) {
-    .skillBarText>p {
-        font-size: 3vw;
+@media screen and (max-width: 480px) {
+    .skillBars {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
     .skillBarImg {
         height: 2.25rem;
         width: 2.25rem;
     }
-    .skillBarText>h2 {
-        font-size: 5vw;
+    .skillBarText > h2 {
+        font-size: 1rem;
+    }
+    .skillBarText > p {
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .skillBar {
+       padding: 0.5rem;
     }
 }

@@ -1,7 +1,8 @@
 import "./contact.css";
-import gitIcon from "../../assets/git.png";
+import gitIcon from "../../assets/github.png";
 import linkdeinIcon from "../../assets/linkdein.png";
 import instagramIcon from "../../assets/instagram.png";
+import facebook from "../../assets/facebook.png";
 import { useState } from "react";
 import { useForm } from "@formspree/react";
 import { motion } from "framer-motion";
@@ -171,6 +172,13 @@ const Contact = () => {
               href="https://www.instagram.com/almayomekonen/"
             >
               <img src={instagramIcon} alt="Instagram" className="link" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.facebook.com/profile.php?id=100002097524154&locale=he_IL"
+            >
+              <img src={facebook} alt="facebook" className="link" />
             </a>
           </div>
         </form>

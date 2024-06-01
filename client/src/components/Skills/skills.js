@@ -1,9 +1,12 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
-import Git from "../../assets/git.jpeg";
+import js from "../../assets/js.png";
+import ReactIcon from "../../assets/React.png";
+import typeScript from "../../assets/typescript.png";
+import Node from "../../assets/node.png";
+import Html from "../../assets/html.png";
+import Css from "../../assets/css.png";
+import Github from "../../assets/github.png";
 
 const Skills = () => {
   return (
@@ -18,7 +21,17 @@ const Skills = () => {
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="ReactIcon" className="skillBarImg" />
+          <img src={js} alt="JsIcon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h2>JS</h2>
+            <p>
+              Proficient in JavaScript for creating interactive and dynamic web
+              applications.
+            </p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img src={ReactIcon} alt="ReactIcon" className="skillBarImg" />
           <div className="skillBarText">
             <h2>React.js</h2>
             <p>
@@ -27,24 +40,44 @@ const Skills = () => {
           </div>
         </div>
         <div className="skillBar">
-          <img src={WebDesign} alt="NodeIcon" className="skillBarImg" />
+          <img src={typeScript} alt="typeScriptIcon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h2>Type-Script</h2>
+            <p>
+              Skilled in TypeScript for scalable and maintainable web
+              applications with strong type safety.
+            </p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img src={Node} alt="NodeIcon" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Node.js</h2>
             <p>Proficient in backend development with Node.js.</p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={AppDesign} alt="HTMLCSSIcon" className="skillBarImg" />
+          <img src={Html} alt="HTMLIcon" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>HTML & CSS</h2>
+            <h2>HTML</h2>
             <p>
-              Strong foundation in HTML and CSS for building responsive web
+              Strong foundation in HTML for building the structure of web
               applications.
             </p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={Git} alt="HTMLCSSIcon" className="skillBarImg" />
+          <img src={Css} alt="CSSIcon" className="skillBarImg" />
+          <div className="skillBarText">
+            <h2>CSS</h2>
+            <p>
+              Strong foundation in CSS for styling and designing responsive web
+              applications.
+            </p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img src={Github} alt="HTMLCSSIcon" className="skillBarImg" />
           <div className="skillBarText">
             <h2>GIT & GITHUB</h2>
             <p>
