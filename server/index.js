@@ -5,7 +5,7 @@ const webSocketServer = require("websocket").server;
 const http = require("http");
 
 // Server address and port
-const webSocketServerPort = 8000;
+const webSocketServerPort = 3000;
 
 // Create a server instance
 const server = http.createServer();
