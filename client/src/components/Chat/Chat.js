@@ -14,7 +14,7 @@ const ChatContainer = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    const newClient = new Socket("ws://127.0.0.1:8000");
+    const newClient = new Socket("ws://127.0.0.1:3000");
     clientRef.current = newClient;
 
     newClient.onclose = () => {
