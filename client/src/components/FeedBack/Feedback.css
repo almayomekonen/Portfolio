@@ -9,19 +9,13 @@
 
 .feedbackDesc {
     text-align: center;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 1rem;
+    padding: 0.5rem;
 }
 
 .feedbackPageTitle {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-}
-
-.feedbackDesc {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    
 }

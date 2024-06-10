@@ -1,6 +1,7 @@
 import React from "react";
 import "../clientCard/ClientCard.css";
 import "./Feedback.css";
+import neta from "../../assets/neta.png";
 import idoRoth from "../../assets/ido.jpeg";
 import tali from "../../assets/tali.jpeg";
 import aviel from "../../assets/aviel.png";
@@ -21,8 +22,18 @@ export default function Feedback() {
           variety of students from diverse backgrounds. Seeing their growth and
           accomplishments has been incredibly rewarding.
         </span>
-
+        <br />
+        <br />
         <div className="cards-scroller">
+          <ClientCard
+            image={neta}
+            title="Neta"
+            description="
+                Dear Almayo, Thank you so much for teaching me React and GitHub. 
+                Your clear and patient instruction made everything easier to understand. 
+                I really appreciate your help and support. You’re an amazing teacher!
+                "
+          />
           <ClientCard
             image={idoRoth}
             title="Ido"
