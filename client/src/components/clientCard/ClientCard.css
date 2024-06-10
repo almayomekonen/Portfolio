@@ -1,63 +1,66 @@
 .card-container {
-    border-radius: 5px;
-    color: #B3B8CD;
-    padding-top: 30px;
-    position: relative;
-    width: 350px;
-    max-width: 100%;
-    text-align: center;
-	margin: 0 auto;
-	margin-bottom: 20px;
+  border-radius: 5px;
+  color: #b3b8cd;
+  padding-top: 20px;
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid #feb90b90;
+  margin-left: 1rem;
+  border-radius: 2rem;
 }
 
-.cards-scroller{
-	display: flex;
-    overflow: auto;
-	white-space-collapse: collapse;
+.cards-scroller {
+  display: flex;
+  overflow: auto;
+  white-space-collapse: collapse;
 }
 .cards-scroller::-webkit-scrollbar {
-    width: 50px;
+  width: 50px;
 }
 
 .cards-scroller::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .cards-scroller::-webkit-scrollbar-thumb {
-    background: #938562;
-    border-radius: 5px; 
+  background: #938562;
+  border-radius: 5px;
 }
 .card-content {
-	background-color: #FEBB0B;
-	border-radius: 3px;
-	color: #231E39;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 3px 7px;
-	position: absolute;
-	top: 30px;
-	left: 30px;
-	width: calc(100% - 60px);
+  background-color: #febb0b;
+  border-radius: 3px;
+  color: #231e39;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: calc(100% - 60px);
 }
-  
+
 .card-container .round {
-	border: 1px solid #03BFCB;
-	border-radius: 50%;
-	padding: 7px;
-	width: 120px;
-	height: 120px;
-	object-fit: cover;
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
 }
 
 h3 {
-	margin: 10px 0;
+  margin: 10px 0;
 }
-  
+
 .client {
-    font-size: 15px;
-    text-align: center;
-    word-wrap: break-word;
-	margin-right: 1rem;
-    max-width: 100%; 
-	width: 315px;
+  font-size: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  margin-right: 1rem;
+  padding: 1rem;
+  width: 315px;
 }
