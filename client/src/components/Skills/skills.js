@@ -11,14 +11,6 @@ import Github from "../../assets/github.png";
 const Skills = () => {
   return (
     <section id="skills">
-      <span className="skillTitle">What I do</span>
-      <span className="skillDesc">
-        I am a skilled and passionate web developer with experience in creating
-        visually appealing and user-friendly websites. I have a strong
-        understanding of programming concepts and a keen eye for detail. I am
-        proficient in HTML, CSS, JavaScript, React, NodeJs and more as well as
-        such Git, Github, Docker.
-      </span>
       <div className="skillBars">
         <div className="skillBar">
           <img src={js} alt="JsIcon" className="skillBarImg" />

@@ -9,6 +9,7 @@ import Feedback from "./components/FeedBack/Feedback";
 import Popup from "./components/Popup/Popup";
 import { AnimatePresence } from "framer-motion";
 import ChatIcon from "./components/Chat/ChatIcon";
+import WhatIDo from "./components/WhatIDo/WhatIDo";
 
 function App() {
   const [showPopup, setShowPopup] = React.useState(true);
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
+      <WhatIDo />
       <AnimatePresence>
         {showPopup && (
           <Popup
