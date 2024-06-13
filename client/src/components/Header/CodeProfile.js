@@ -8,7 +8,8 @@ const CodeProfile = () => {
       `REACT", "NODE.JS", "NEXT.JS", "MongoDB"
    `,
     ],
-    funFact: "I Can debug code while standing on one leg!",
+    funFact: `I Can debug code while standing on 
+    one leg!`,
     bestCoder: `true`,
   };
 
@@ -29,7 +30,7 @@ const CodeProfile = () => {
           </span>
           <span className="line">
             {`  Skills: [
-            `}
+         `}
             <span className="array">
               {profile.skills.map((skill) => `"${skill}`).join(", ")}
             </span>
