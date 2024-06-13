@@ -1,0 +1,58 @@
+.code-container {
+    margin-top: 3rem;
+    border-radius: 5px;
+    padding: 1rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+  }
+  
+  .code-container pre {
+    margin: 0;
+  }
+  
+  .code-container code {
+    display: block;
+    padding: 0;
+  }
+  
+  .code-container .line {
+    display: block;
+    color: rgb(102, 168, 226); 
+  }
+  
+  .code-container .keyword {
+    color: #567cd6; 
+  }
+  
+  .code-container .string {
+    color: #ce9178; 
+  }
+  
+  .code-container .number {
+    color: #b5cea8; 
+  }
+  
+  .code-container .array {
+    color: #9cdcfe; 
+  }
+  .code-container .true {
+    color: yellow; 
+  }
+  
+  @media screen and (max-width: 600px) {
+    .code-container {
+      width: 21rem;
+      font-size: 12px; 
+      padding: 0;
+     margin-bottom: 2rem;
+    }
+  }
+  
+   @media screen and (min-width: 601px) and (max-width: 900px) {
+    .code-container {
+      font-size: 1.1rem; 
+    }
+  } 
+  

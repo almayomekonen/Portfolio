@@ -1,98 +1,104 @@
 #intro {
-    height: calc(100vh - 8rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.bg {
-    position: absolute;
-    top: -4rem;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 80vh;
+  width: 100vw;
+  max-width: 90rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: #282c34;
 }
 
 .introContent {
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .hello {
-    font-size: 1.75rem;
-    font-weight: 100;
+  font-size: 1.75rem;
+  font-weight: 100;
 }
 
 .introName {
-    color: yellow;
+  color: yellow;
 }
 
 .introPara {
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing: 1px;
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .btn {
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    width: 170px;
-    font-weight: bold;
-    color: black;
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 170px;
+  font-weight: bold;
+  color: black;
 }
 
 .btnImg {
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-    cursor: pointer;
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+  cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
-    .bg {
-        right: -19vw;
-        height: 75vh;
-        margin-right: 40px;
-        width: 500px;
-        margin-top: 5rem;
-    }
-    .btn{
-        padding: 10px;
-        width: 124px;
-    }
-    .introName{
-        background: -webkit-linear-gradient(crimson, rgb(29, 120, 156));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    .introContent {
-        margin-top: 5rem;
-        font-size: 10vw;
-    }
-    .introPara{
-        color: black;
-    }
-    .introText{
-        color: black;
-        font-size: 25px;
-    }
-    .hello {
-        font-size: 4.5vw;
-        font-weight: bold;
-    }
-    .hello{
-        color: black;
-    }
+@media screen and (max-width: 600px) {
+  .introContent {
+    margin-top: 3rem;
+    font-size: 10vw;
+  }
+
+  #intro {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #intro {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #intro {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  
+  .introContent {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    padding: 0.5rem;
+  }
+  
+  .introContent {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #intro {
+    padding: 0.5rem;
+  }
+  
+  .introContent {
+    font-size: 10vw;
+    margin-top: 3rem;
+  }
 }
