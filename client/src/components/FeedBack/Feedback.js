@@ -7,7 +7,7 @@ import tali from "../../assets/tali.jpeg";
 import aviel from "../../assets/aviel.png";
 import alon from "../../assets/alon.jpeg";
 import itamar from "../../assets/itamar.jpeg";
-import portfolio1 from "../../assets/portfolio-1.png";
+import shelly from "../../assets/shelly.jpeg";
 import portfolio2 from "../../assets/portfolio-2.png";
 import ClientCard from "../clientCard/ClientCard";
 
@@ -18,9 +18,9 @@ export default function Feedback() {
         <h1 className="feedbackPageTitle">Students Feedback</h1>
 
         <span className="feedbackDesc">
-          As an private tutor , I have had the privilege of teaching a wide
-          variety of students from diverse backgrounds. Seeing their growth and
-          accomplishments has been incredibly rewarding.
+          As an private tutor, I have had the privilege of teaching a wide
+          variety of students from diverse backgrounds. <br />
+          Seeing their growth and accomplishments has been incredibly rewarding.
         </span>
         <br />
         <br />
@@ -71,7 +71,7 @@ export default function Feedback() {
           "
           />
           <ClientCard
-            image={portfolio1}
+            image={shelly}
             title="Shelly"
             description="
           Almayo is no less than an excellent teacher who puts the student first!!

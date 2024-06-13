@@ -3,20 +3,22 @@
     margin: 0 auto;
     text-align: center;
     justify-content: center;
-    max-width: 60rem;
-    margin-bottom: 5rem;
-    padding-top: 3.5rem;
+    max-width: 90rem;
+    margin-bottom: 3rem;
+    background-color: #282c34;
+    padding: 2rem;
 }
 
 .feedbackDesc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
-    font-size: 1rem;
-    padding: 0.5rem;
 }
 
 .feedbackPageTitle {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 33px;
     margin-bottom: 1rem;
 }
