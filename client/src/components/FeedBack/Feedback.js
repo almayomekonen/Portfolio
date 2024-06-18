@@ -9,20 +9,18 @@ import alon from "../../assets/alon.jpeg";
 import itamar from "../../assets/itamar.jpeg";
 import shelly from "../../assets/shelly.jpeg";
 import portfolio2 from "../../assets/portfolio-2.png";
-import arrow from "../../assets/arrow-right.webp";
 import ClientCard from "../clientCard/ClientCard";
 
 export default function Feedback() {
   return (
     <>
       <div id="feedbackPage">
-        <h1 className="feedbackPageTitle">Students Feedback</h1>
         <span className="feedbackDesc">
-          As an private tutor, I have had the privilege of teaching a wide
-          variety of students from diverse backgrounds. <br />
-          Seeing their growth and accomplishments has been incredibly rewarding.
+          Here is some feedback from my students and clients...
         </span>
-        <br />
+        <h1 className="feedbackPageTitle">
+          <p className="students-feedback">{`< Students & Clients >`}</p>
+        </h1>
         <br />
         <div className="cards-scroller">
           <ClientCard
@@ -85,7 +83,6 @@ export default function Feedback() {
           "
           />
         </div>
-        <img className="arrow-img" src={arrow} alt="arrow-right" />
       </div>
     </>
   );
