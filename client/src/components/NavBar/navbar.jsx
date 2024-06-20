@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
-import scriptImg from "../../assets/script.png";
 import { Link } from "react-scroll";
 import menu from "../../assets/menu.png";
-import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -58,24 +56,6 @@ const Navbar = () => {
           Clients
         </Link>
       </div>
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        transition={{ type: "spring", stiffness: 500 }}
-        className="desktopMenuBtn"
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <img
-          style={{ width: "1.5rem" }}
-          src={scriptImg}
-          alt="script-img"
-          className="desktopMenuImg"
-        />
-        Contact Me
-      </motion.button>
 
       <img
         src={menu}
@@ -131,18 +111,6 @@ const Navbar = () => {
           onClick={() => setShowMenu(false)}
         >
           Clients
-        </Link>
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          className="listItem"
-          onClick={() => setShowMenu(false)}
-        >
-          Contact
         </Link>
       </div>
     </nav>

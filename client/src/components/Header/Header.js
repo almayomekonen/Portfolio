@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
-import btnImg from "../../assets/hireme.png";
-import { motion } from "framer-motion";
+import btnImg from "../../assets/script.png";
 import CodeProfile from "./CodeProfile";
 
 const Header = () => {
@@ -24,15 +23,15 @@ const Header = () => {
             <br />
             visually appealing and user friendly websites.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.1, backgroundColor: "#FFFF00" }}
-            transition={{ type: "spring", stiffness: 500 }}
-            className="btn"
-            onClick={scrollToContact}
-          >
-            <img src={btnImg} alt="Hire" className="btnImg" />
-            Contact Me
-          </motion.button>
+          <div class="button-container">
+            <button onClick={scrollToContact} className="button">
+              <span>
+                <img src={btnImg} alt="case-img" />
+              </span>
+
+              <span>Contact Me</span>
+            </button>
+          </div>
         </div>
         <CodeProfile />
       </section>
