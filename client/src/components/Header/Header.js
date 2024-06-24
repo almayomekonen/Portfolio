@@ -1,7 +1,8 @@
 import React from "react";
-import "./Header.css";
 import btnImg from "../../assets/script.png";
 import CodeProfile from "./CodeProfile";
+import "./Header.css";
+import "./Button.css";
 
 const Header = () => {
   const scrollToContact = () => {
