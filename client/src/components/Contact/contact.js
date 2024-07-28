@@ -60,6 +60,8 @@ const Contact = () => {
       setIsSending(false);
       reset();
     }, 7000);
+
+    setEnteredValues("");
   };
 
   if (state.succeeded) {

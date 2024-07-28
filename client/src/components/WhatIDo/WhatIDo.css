@@ -5,7 +5,7 @@
     align-items: center;
     text-align: center;
     margin-top: 3rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .almayo-image {
@@ -29,3 +29,35 @@
     max-width: 51rem;
     padding: 0 2rem;
 }
+
+.course-link {
+    color: inherit;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    width: 10rem;
+  }
+  
+  .course-link {
+    background:
+      linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        yellow,
+       yellow,
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  .course-link:hover {
+    background-size: 0 3px, 100% 3px;
+    color: yellow;
+  }

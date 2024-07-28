@@ -1,5 +1,4 @@
 import React from "react";
-import btnImg from "../../assets/script.png";
 import CodeProfile from "./CodeProfile";
 import "./Header.css";
 import "./Button.css";
@@ -24,12 +23,8 @@ const Header = () => {
             <br />
             visually appealing and user friendly websites.
           </p>
-          <div class="button-container">
+          <div className="button-container">
             <button onClick={scrollToContact} className="button">
-              <span>
-                <img src={btnImg} alt="case-img" />
-              </span>
-
               <span>Contact Me</span>
             </button>
           </div>
