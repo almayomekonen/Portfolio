@@ -1,6 +1,5 @@
 import "./WhatIDo.css";
 import almayo from "../../assets/almayo.png";
-import { Link } from "react-router-dom";
 
 const WhatIDo = () => {
   return (
@@ -16,13 +15,6 @@ const WhatIDo = () => {
           something amazing together!
           <br />
           <br />
-          <Link
-            target="_blank"
-            className="course-link"
-            to="https://website-construction-studies.my.canva.site/full-stack-course"
-          >
-            View my Course
-          </Link>
         </span>
       </section>
     </>

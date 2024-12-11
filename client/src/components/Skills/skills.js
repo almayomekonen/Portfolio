@@ -7,10 +7,12 @@ import Node from "../../assets/node.png";
 import Html from "../../assets/html.png";
 import Css from "../../assets/css.png";
 import Github from "../../assets/github.png";
+import Nextjs from "../../assets/nextjs.png";
 
 const Skills = () => {
   return (
     <section id="skills">
+      <h1>My Skill Set</h1>
       <div className="skillBars">
         <div className="skillBar">
           <img src={js} alt="JsIcon" className="skillBarImg" />
@@ -74,6 +76,16 @@ const Skills = () => {
             <h2>GIT & GITHUB</h2>
             <p>
               Proficient in collaborating and managing projects with GitHub.
+            </p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img src={Nextjs} alt="NextjsIcon" className="skillBarImg nextjs" />
+          <div className="skillBarText">
+            <h2>Next.js</h2>
+            <p>
+              Proficient in building and managing modern web applications using
+              Next.js.
             </p>
           </div>
         </div>

@@ -55,6 +55,17 @@ const Navbar = () => {
         >
           Clients
         </Link>
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Contact
+        </Link>
       </div>
 
       <img

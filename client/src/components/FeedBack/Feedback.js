@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "../clientCard/ClientCard.css";
 import "./Feedback.css";
 import neta from "../../assets/neta.png";
@@ -83,6 +85,15 @@ export default function Feedback() {
           "
           />
         </div>
+        <br />
+        <br />
+        <Link
+          target="_blank"
+          className="course-link"
+          to="https://website-construction-studies.my.canva.site/full-stack-course"
+        >
+          View my Course
+        </Link>
       </div>
     </>
   );
