@@ -1,63 +1,111 @@
 #what-i-do {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 3rem;
-    padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .almayo-image {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-    object-fit: cover; 
-    display: block; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 .skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.skillDesc {
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 51rem;
-    padding: 0 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .course-link {
-    color: inherit;
-    font-size: 1.4rem;
-    text-decoration: none;
+  color: inherit;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-align: center;
+  width: 10rem;
+}
+
+.course-link {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(to right, yellow, yellow, rgba(0, 100, 200, 1));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.course-link:hover {
+  background-size: 0 3px, 100% 3px;
+  color: yellow;
+}
+
+.horizontal-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 20px;
+}
+
+.class-image {
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(185, 166, 166, 0.1);
+}
+
+.text-section {
+  max-width: 30%;
+  text-align: left;
+}
+
+.skillDesc {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.bouncing-emoji {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: bounce 1.3s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .horizontal-section {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .class-image,
+  .text-section {
+    width: 90%;
+    max-width: none;
+  }
+
+  .text-section {
     text-align: center;
-    width: 10rem;
   }
-  
-  .course-link {
-    background:
-      linear-gradient(
-        to right,
-        rgba(100, 200, 200, 1),
-        rgba(100, 200, 200, 1)
-      ),
-      linear-gradient(
-        to right,
-        yellow,
-       yellow,
-        rgba(0, 100, 200, 1)
-    );
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-  }
-  
-  .course-link:hover {
-    background-size: 0 3px, 100% 3px;
-    color: yellow;
-  }
+}

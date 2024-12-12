@@ -15,13 +15,15 @@ const Header = () => {
         <div className="introContent">
           <span className="hello">Hello,</span>
           <span className="introText">
-            I'm <span className="introName">Almayo</span> <br />
-            Web Developer
+            I'm <span className="introName">Almayo M. </span>, <br />a Web
+            Developer
           </span>
           <p className="introPara">
-            I am a skilled web Developer with experience in creating
+            I am a skilled web developer with expertise in building efficient,
             <br />
-            visually appealing and user friendly websites.
+            user-friendly websites and a proven track record of teaching and
+            <br />
+            mentoring students in web development.
           </p>
           <div className="button-container">
             <button onClick={scrollToContact} className="button">
