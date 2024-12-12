@@ -2,6 +2,7 @@ import Travel from "../assets/travel.jpeg";
 import TicTacToe from "../assets/tic-tac-toe.png";
 import Shop from "../assets/shop.jpeg";
 import Map from "../assets/map.jpeg";
+import Ufc from "../assets/ufc.jpg";
 
 const images = [
   {
@@ -27,6 +28,12 @@ const images = [
     alt: "Map",
     href: "https://almayomekonen.github.io/Mapty/",
     description: "Mapty-App",
+  },
+  {
+    src: Ufc,
+    alt: "UFC",
+    href: "https://ufc-nextjs-6hpl.vercel.app/",
+    description: "UFC-FIGHTERS-NEWS",
   },
 ];
 
